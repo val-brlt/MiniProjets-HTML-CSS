@@ -1,0 +1,60 @@
+body {
+    margin-top: 50px;
+}
+
+
+.button_text, .button_nb{
+    text-align: center;
+    height: 60px;
+    flex-basis: 50px;
+    background-color: #0074D9;
+    border-radius: 5px;
+}
+
+.button_text:hover, .button_nb:hover{
+    background-color: #39CCCC;
+}
+
+.button_text{
+    flex-basis: 100px;
+
+}
+
+
+a{
+    font-family: Arial, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.button_nb, .button_text{
+    flex-grow: 1;
+    margin: 0 0.5% 0 0.5%; /* space between button */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#container_pagination{
+    display:flex;
+}
+
+
+@media all and (min-width: 500px) and (max-width: 600px){
+    .button_nb{
+        display: none;
+    }
+}
+
+@media all and (max-width: 500px){
+
+    .button_nb{
+        display: none;
+    }
+    #container_pagination{
+        display:flex;
+        flex-direction: column;
+    }
+    .button_text{
+        margin: 0.5% 0 0.5% 0; /* space between button */
+    }
+}

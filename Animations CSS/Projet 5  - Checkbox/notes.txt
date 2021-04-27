@@ -1,0 +1,16 @@
+Valentin BRAULT - 19/03/21
+
+Création d'une checkbox à l'aide d'animations css
+
+Langages utilisés: HTML&CSS
+Compétences: Animations CSS, B&A css, input HTML
+
+Remarques:
+Utiliser un id pour un input ! les class ne fonctionnent pas.
+
+Enlever le design d'un input de base 
+-> input[type=checkbox] {
+    display:none;}
+
+Faire en sorte que les deux élements se "concorde"
+-> position:relative;

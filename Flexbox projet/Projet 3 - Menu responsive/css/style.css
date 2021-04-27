@@ -1,0 +1,96 @@
+
+
+@font-face {
+    font-family: 'aaarghnormal';
+    src: url('../fonts/Aaargh-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin:auto;
+}
+
+@media screen and (min-width: 600px)
+{
+
+
+    #container_nav {
+        background-color: #4EB9FF;
+        height: 60px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+
+
+    #clicker {
+        display: none;
+    }
+    
+
+}
+
+
+
+@media all and (max-width: 599px) {
+
+    #container_nav {
+        background-color: #4EB9FF;
+        display: none;
+    }
+
+    #clicker{
+        background-color: #4EB9FF;
+        display:flex;
+        justify-content: center;
+        outline:none;
+        cursor:pointer;
+    }
+
+
+    #clicker:focus + #container_nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+.items_nav{
+    text-align: center;
+    height: 60px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items_nav:hover{
+    background-color: #9CD7FD;
+}
+
+nav a{
+    font-family: aaarghnormal, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    color: white;
+    text-decoration: none;
+}
+
+h2{
+    color: white;
+}
+
+h2:hover{
+    color:whitesmoke;
+}
+
+#container_elem{
+    display: flex;
+    flex-direction: column;      
+    margin: 0 5% 0 5%;
+    position: absolute;
+
+}

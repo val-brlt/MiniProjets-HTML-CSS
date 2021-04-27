@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(124, 124, 124);
+}
+
+
+.center{
+    /*  Centrer l'élement au milieu de l'écran */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    font-size: 6em;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: sans-serif;
+    
+    border: 2px solid rgb(33, 106, 216);
+    padding: 80px 60px;
+    overflow: hidden; /*Cache ce qui sort du bouton */
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(25deg);
+    background-color: rgb(33, 106, 216);
+    z-index: -1; /* permet de placer l'élément sous le texte */
+    width: 300%;
+    height: 0%;
+    transition: 0.3s;
+}
+
+.button:hover::after{
+    height: 200%;
+}
+

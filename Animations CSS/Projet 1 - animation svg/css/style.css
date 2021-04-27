@@ -1,0 +1,33 @@
+body{
+    background: radial-gradient(circle at bottom, rgb(255, 31, 31),rgb(95, 14, 14)); /* fond en dégradé */
+    height: 100vh;
+    overflow:hidden; /* cache la scroll-bar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+circle{
+    fill: none; /* remplissage */
+    stroke: white; /* contour */
+    stroke-width: 10px; /* épaiseur du contour */
+    stroke-dasharray: 100 100 ; /* 100px vide, 100px plein */
+    stroke-dashoffset: 70; /* décalage */
+    animation: circle 2s ease-in-out alternate  infinite;
+}
+
+svg{
+    transform:translateX(-50px);
+    filter: drop-shadow(100px 0 rgb(0, 0, 0)); /* Créer une ombre à 100px */
+}
+
+@keyframes circle {
+    0%{
+        stroke-dasharray: 100 100 ;
+        stroke-dashoffset: 70;
+    }
+    100%{
+        stroke-dashoffset: -600;
+        stroke-dasharray: 20 20;
+    }
+}

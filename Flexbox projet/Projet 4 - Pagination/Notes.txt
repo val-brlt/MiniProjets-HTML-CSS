@@ -1,0 +1,15 @@
+Valentin Brault - 16/03/21
+
+Création d'une pagination responsive: 
+
+- une version "ordinateur" qui affiche les boutons "suivant","précédent" et les numéros des pages en ligne.
+- une version "tablette" qui affiche les deux boutons "suivant" et "précédent" en ligne
+- une version "téléphone" qui affiche les deux boutons "suivant" et "précédent" en colonnes
+
+Langages utilisés: HTML&CSS
+Compétences: flexbox, media queries
+
+Remarques:
+Rappel -> centrer le texte dans un flex item 
+= "display:flex" & "justify-content: center" & "align-items:center" dans le flex item.
+Pour les bordures(border-radius), utiliser des pixels à la place des pourcentages.

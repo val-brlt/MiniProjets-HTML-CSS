@@ -1,0 +1,45 @@
+body, html{
+    line-height: 1.6;  
+    padding: 0;
+    margin: 0;
+}
+
+
+.header{
+    height: 60px;
+    background-color: #b9ff80;
+
+}
+
+.content{
+    background-color: #8080ff;
+    flex-basis: 60%;
+}
+
+.sidebar{
+    background-color: #f59e89;
+    flex-basis: 20%;
+}
+
+.footer{
+    background-color: #95ead0;
+    text-align: center;
+}
+
+#container{
+    display:flex;
+}
+
+@media all and (max-width: 500px){
+    #container{
+        display:flex;
+        flex-flow: row wrap;
+    }
+    .content{
+        flex-basis: 100%;
+    }
+    .sidebar{
+        order: 1;
+        flex-basis: 50%;
+    }
+}

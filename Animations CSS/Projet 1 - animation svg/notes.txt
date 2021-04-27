@@ -1,0 +1,18 @@
+Valentin BRAULT - 19/03/21
+
+Création d'une animation svg
+
+Langages utilisé: HTML&CSS
+Compétences: Animation CSS, SVG HTML.
+
+Notes: 
+
+background: radial-gradient(circle at bottom, rgb(255, 31, 31),rgb(95, 14, 14)); /* fond en dégradé */
+
+overflow:hidden; /* cache la scroll-bar */
+
+fill: none; /* remplissage */
+stroke: white; /* contour */
+stroke-width: 10px; /* épaiseur du contour */
+stroke-dasharray: 100 100 ; /* 100px vide, 100px plein */
+stroke-dashoffset: 70; /* décalage */

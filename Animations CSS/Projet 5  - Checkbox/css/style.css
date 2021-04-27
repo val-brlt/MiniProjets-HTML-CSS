@@ -1,0 +1,40 @@
+
+/* On cache l'input de base */
+input[type=checkbox] {
+    display:none;
+}
+
+/* On applique un style */
+label {
+    display:block;
+    cursor: pointer; /* curseur de la souris */
+    width: 200px;
+    height: 85px;
+    background-color: rgb(189, 186, 186);
+    margin: 100px auto 0 auto;
+    border-radius: 40px;
+    transition: all 1s ease-out;
+}
+
+label::after{
+    content:'';
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgb(122, 122, 122);
+    transition: all 1s ease-out;
+
+}
+
+input:checked + label{
+    background-color: rgb(77, 218, 84);
+}
+
+input:checked + label::after{
+    background-color: rgb(56, 163, 61);
+    transform: translate(115px);
+}

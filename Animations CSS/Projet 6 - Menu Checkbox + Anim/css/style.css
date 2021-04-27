@@ -1,0 +1,127 @@
+input[type=checkbox] {
+    display:none;
+}
+
+html {
+    font-family: 'lato';
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #95a5a6;
+}
+
+.navBG{
+    height: 96px;
+    width: 96px;
+    border-radius: 50%;
+    background-image: radial-gradient(#c3073f, #855769);
+    /* Position du cercle initiale */
+    position: fixed;
+    top: 72px;
+    right: 104px;
+    z-index: 1000;
+
+    transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
+}
+
+.navBtn {
+    background-color: white;
+    height: 112px;
+    width: 112px;
+    border-radius: 50%;
+    position:fixed;
+    top: 64px;
+    right: 96px;
+    z-index: 2000;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.1);
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Logo menu */
+/* trait du milieu */
+.navIcon {
+    position: relative;
+    margin-top: 56px;
+    width: 48px;
+    height: 2px;
+    background: #333;
+    display: inline-block;
+}
+/* 2 autre trait */
+.navIcon::before, .navIcon::after{
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 2px;
+    background: #333;
+    left: 0;
+    transition: all 0.2s;
+}
+
+.navIcon::before {
+    top: -12.8px;
+}
+
+.navIcon::after {
+    top: 12.8px;
+}
+
+
+/* nav et liste */
+
+.navElem {
+    height: 100vh;
+    position: fixed;
+    width: 0;
+    opacity: 0;
+    z-index: 1500;
+    transition: all 0.8s cubic-bezier(0.68,-0.55,0.265,1.65);
+
+}
+
+.navListe{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+}
+
+.navItems {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 48px;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Animations menu Checkbox */
+.navCheckbox:checked ~ .navBG{
+    transform: scale(80);
+}
+
+.navCheckbox:checked ~ .navElem {
+    opacity: 1;
+    width: 100%;
+}
+
+.navCheckbox:checked + .navBtn .navIcon {
+    background-color: transparent;
+}
+
+.navCheckbox:checked + .navBtn .navIcon::before {
+    transform: rotate(135deg);
+    top: 0;
+}
+
+.navCheckbox:checked + .navBtn .navIcon::after {
+    transform: rotate(-135deg);
+    top: 0;
+}
