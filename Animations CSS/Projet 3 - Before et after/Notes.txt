@@ -1,9 +1,0 @@
-Valentin BRAULT - 29/03/21
-
-Création d'une animation à l'aide de Before & After
-
-Langages utilisé: HTML&CSS
-Compétences: Animations CSS, before&after
-
-Remarques: 
-z-index: -1; /* permet de placer l'élément sous le texte */
